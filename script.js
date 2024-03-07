@@ -33,7 +33,12 @@ function emergency() {
 }
 
 function blinkYellow() {
-  var yellowLight = document.querySelector('.yellow');
+    var redLight = document.querySelector('.red');
+    var yellowLight = document.querySelector('.yellow');
+    var greenLight = document.querySelector('.green');
+    greenLight.style.backgroundColor = "black";
+    redLight.style.backgroundColor = "black";
+
   if (yellowLight.style.backgroundColor === "yellow") {
     yellowLight.style.backgroundColor = "black";
   } else {
