@@ -8,12 +8,15 @@
 </head>
 <body>
   <div id="semaforo">
-    <div class="light red"></div>
-    <div class="light yellow"></div>
-    <div class="light green"></div>
+    <div class="lamp" id="red"></div>
+    <div class="lamp" id="yellow"></div>
+    <div class="lamp" id="green"></div>
   </div>
-  <button id="trocarBtn" onclick="changeLights()">Trocar</button>
-  <button id="desligarBtn" onclick="emergency()">Desligar</button>
+
+  <label class="switch">
+    <input type="checkbox"  id="myCheckbox" onchange="toggleCheck()">
+    <span class="slider"></span>
+  </label>
 
   <script src="script.js"></script>
 </body>
